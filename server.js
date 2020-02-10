@@ -16,7 +16,7 @@ app.get('/register', (req, res) => {
 });
 
 app.get('/questionpaper/:class', (req, res) => {
-    res.send('Server question Paper: ' + req.params.class);
+    res.send(["Paper1","Paper2","Paper3"]);
 });
 
 app.listen(PORT, () => {
