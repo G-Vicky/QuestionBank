@@ -3,17 +3,17 @@ const express = require("express");
 const app = express();
 
 var connection = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "",
-  database: "admission"
+  host: "sql306.epizy.com",
+  user: "epiz_23314843",
+  password: "gvicky",
+  database: "epiz_23314843_admission"
 });
 
 connection.connect(err => {
   if (err) {
     console.log(err);
   }
-  //   console.log("connected as id " + connection.threadId);
+  console.log("connected as id " + connection.threadId);
 });
 
 const PORT = process.env.PORT || 3000;
